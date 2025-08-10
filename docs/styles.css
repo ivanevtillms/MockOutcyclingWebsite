@@ -60,7 +60,7 @@ p{ margin: 0 0 1rem; }
 /* Hero */
 .hero{
   min-height: 70vh;
-  background: url('hero.jpg') center/cover no-repeat;
+  background: url('./hero.jpg') center/cover no-repeat;
   position: relative;
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
