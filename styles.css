@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1525113991271-3a3d4e226537?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
+
+.main-nav {
+  background: #333;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-nav li {
+  margin: 0.5rem;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.content-section {
+  padding: 2rem;
+}
+
+.content-section:nth-of-type(even) {
+  background: #f4f4f4;
+}
+
+.donate-button {
+  padding: 0.75rem 1.5rem;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+  }
+}
