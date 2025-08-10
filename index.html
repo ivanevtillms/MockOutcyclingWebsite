@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OutCycling — Come ride with us</title>
+  <meta name="description" content="OutCycling is a friendly biking club. Come ride with us! Join, learn about us, see our calendar, meet ride captains, and donate." />
+  <meta property="og:title" content="OutCycling — Come ride with us" />
+  <meta property="og:description" content="Group rides, community, and fun on two wheels." />
+  <meta property="og:image" content="hero.jpg" />
+  <link rel="icon" href="hero.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="OutCycling home">
+        <span class="brand-mark" aria-hidden="true">🚲</span>
+        <span class="brand-text">OutCycling</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+          <li><a href="#captains">Ride Captains</a></li>
+          <li><a class="donate-link" href="#donate">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" role="banner" aria-label="OutCycling hero">
+      <!-- Background image is set in CSS as hero.jpg -->
+      <div class="overlay">
+        <div class="hero-content container">
+          <h1>Rides, community, and a lot of fun.</h1>
+          <p>All speeds, all distances, all are welcome.</p>
+          <a class="btn btn-primary btn-lg" href="#join" aria-label="Come ride with us — join section">
+            Come ride with us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join -->
+    <section id="join" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Join the club</h2>
+          <p>Membership gets you access to group rides, skills clinics, and a welcoming community.</p>
+        </div>
+        <div class="cards grid-3">
+          <article class="card">
+            <h3>Starter</h3>
+            <p class="price">$0 / month</p>
+            <ul>
+              <li>1 intro ride</li>
+              <li>Newsletter & updates</li>
+            </ul>
+            <a class="btn btn-outline" href="#" aria-label="Select Starter plan">Get started</a>
+          </article>
+          <article class="card featured">
+            <h3>Rider</h3>
+            <p class="price">$8 / month</p>
+            <ul>
+              <li>Unlimited group rides</li>
+              <li>Members chat & forums</li>
+              <li>Discounts with partners</li>
+            </ul>
+            <a class="btn btn-primary" href="#" aria-label="Select Rider plan">Join now</a>
+          </article>
+          <article class="card">
+            <h3>Supporter</h3>
+            <p class="price">$15 / month</p>
+            <ul>
+              <li>Everything in Rider</li>
+              <li>Support youth programs</li>
+            </ul>
+            <a class="btn btn-outline" href="#" aria-label="Select Supporter plan">Become a supporter</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="grid-2 about-grid">
+          <div>
+            <h2>About us</h2>
+            <p>OutCycling is a community-focused cycling club dedicated to safe, inclusive rides for all levels. We organize weekly rides, skills clinics, and social events. Helmets required, smiles encouraged.</p>
+            <ul class="checklist">
+              <li>No-drop rides for beginners</li>
+              <li>Speed groups for intermediate & advanced</li>
+              <li>Volunteer-led, community powered</li>
+            </ul>
+          </div>
+          <figure class="about-photo">
+            <img src="about.jpg" alt="A happy group of OutCycling riders gathering before a ride" />
+            <figcaption>Good vibes before wheels roll.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar -->
+    <section id="calendar" class="section">
+      <div class="container">
+        <h2>Calendar of events</h2>
+        <p>We ride year-round. Here are a few upcoming highlights.</p>
+        <div class="table-wrap">
+          <table class="events">
+            <thead>
+              <tr><th>Date</th><th>Event</th><th>Distance</th><th>Meetup</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aug 24</td>
+                <td>Hudson River Greenway Social</td>
+                <td>18 mi / 29 km</td>
+                <td>Pier 25, 9:00 AM</td>
+                <td><a class="btn btn-small" href="#">RSVP</a></td>
+              </tr>
+              <tr>
+                <td>Sep 7</td>
+                <td>Intro to Group Riding</td>
+                <td>12 mi / 19 km</td>
+                <td>Prospect Park, 10:00 AM</td>
+                <td><a class="btn btn-small" href="#">RSVP</a></td>
+              </tr>
+              <tr>
+                <td>Sep 21</td>
+                <td>Harbor Loop Challenge</td>
+                <td>35 mi / 56 km</td>
+                <td>Battery Park, 8:00 AM</td>
+                <td><a class="btn btn-small" href="#">RSVP</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small">Want this in your calendar? <a href="#">Subscribe to our iCal feed</a>.</p>
+      </div>
+    </section>
+
+    <!-- Ride Captains -->
+    <section id="captains" class="section section-alt">
+      <div class="container">
+        <h2>Meet your ride captains</h2>
+        <div class="cards grid-3 captains-grid">
+          <article class="card person">
+            <img src="captain-alex.jpg" alt="Alex, OutCycling ride captain" loading="lazy" />
+            <h3>Alex Morgan</h3>
+            <p class="muted">No-drop & Skills</p>
+            <p>Loves introducing new riders to group riding and bike handling.</p>
+          </article>
+          <article class="card person">
+            <img src="captain-jamie.jpg" alt="Jamie, OutCycling ride captain" loading="lazy" />
+            <h3>Jamie Lee</h3>
+            <p class="muted">Endurance & Routes</p>
+            <p>Route geek. Knows every scenic detour and the best coffee stops.</p>
+          </article>
+          <article class="card person">
+            <img src="captain-sam.jpg" alt="Sam, OutCycling ride captain" loading="lazy" />
+            <h3>Sam Patel</h3>
+            <p class="muted">Safety & Pacing</p>
+            <p>Calm, patient, and laser-focused on safe, steady group pace lines.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donate -->
+    <section id="donate" class="section">
+      <div class="container donate-cta">
+        <div>
+          <h2>Support the mission</h2>
+          <p>Your donation helps us run clinics, maintain routes, and expand access to cycling.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="#" aria-label="Donate to OutCycling">Donate</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> OutCycling</p>
+      <p class="small muted">Made with ❤️ and human power.</p>
+    </div>
+  </footer>
+</body>
+</html>
