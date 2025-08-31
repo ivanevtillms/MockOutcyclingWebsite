@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OutCycling — Pride Ride</title>
+  <meta name="description" content="Learn about the Pride Ride and sign up to participate." />
+  <link rel="icon" href="../media/hero.jpg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="OutCycling home">
+        <span class="brand-mark" aria-hidden="true">🚲</span>
+        <span class="brand-text">OutCycling</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="organize.html">Organize</a></li>
+          <li><a href="pride-ride.html">Pride Ride</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h2>Pride Ride</h2>
+        <p>Our annual celebration of cycling and Pride. Riders of all levels are welcome.</p>
+        <figure class="route-preview">
+          <img src="https://placehold.co/600x300?text=Pride+Ride" alt="Pride Ride placeholder image" />
+        </figure>
+        <p>Sign up and secure your spot:</p>
+        <form class="ride-form">
+          <label for="pride-name">Name</label>
+          <input id="pride-name" type="text" />
+          <label for="pride-email">Email</label>
+          <input id="pride-email" type="email" />
+          <label for="pride-distance">Distance</label>
+          <select id="pride-distance">
+            <option>20 mi</option>
+            <option>40 mi</option>
+            <option>60 mi</option>
+          </select>
+          <button class="btn btn-primary" type="submit">Register & Pay</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> OutCycling</p>
+      <p class="small muted">Made with ❤️ and human power.</p>
+    </div>
+  </footer>
+</body>
+</html>

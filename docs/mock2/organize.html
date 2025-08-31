@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OutCycling — Organize a Ride</title>
+  <meta name="description" content="Schedule and manage rides for the OutCycling community." />
+  <link rel="icon" href="../media/hero.jpg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="OutCycling home">
+        <span class="brand-mark" aria-hidden="true">🚲</span>
+        <span class="brand-text">OutCycling</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="organize.html">Organize</a></li>
+          <li><a href="pride-ride.html">Pride Ride</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Schedule a Ride</h2>
+          <p>Ride captains can schedule and manage rides here.</p>
+        </div>
+        <form class="ride-form">
+          <label for="ride-title">Ride title</label>
+          <input id="ride-title" type="text" placeholder="Sunset Loop" />
+
+          <label for="ride-date">Date</label>
+          <input id="ride-date" type="date" />
+
+          <label for="ride-distance">Distance</label>
+          <input id="ride-distance" type="text" placeholder="25 mi" />
+
+          <label for="ride-tier">Visibility</label>
+          <select id="ride-tier">
+            <option>All members</option>
+            <option>Rider tier+</option>
+          </select>
+
+          <button class="btn btn-primary" type="submit">Publish</button>
+        </form>
+        <p class="muted small">Manage recurring rides, respond to questions, and send updates to participants.</p>
+        <figure class="route-preview">
+          <img src="https://placehold.co/600x300?text=Extra-pay+Ride+Photo" alt="Placeholder for extra-pay ride" />
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> OutCycling</p>
+      <p class="small muted">Made with ❤️ and human power.</p>
+    </div>
+  </footer>
+</body>
+</html>
