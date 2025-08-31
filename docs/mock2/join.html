@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OutCycling — Join the club</title>
+  <meta name="description" content="OutCycling membership levels: Starter, Rider, and Supporter." />
+  <link rel="icon" href="../media/hero.jpg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="OutCycling home">
+        <span class="brand-mark" aria-hidden="true">🚲</span>
+        <span class="brand-text">OutCycling</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="organize.html">Organize</a></li>
+          <li><a href="pride-ride.html">Pride Ride</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="join" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Join the club</h2>
+          <p>Membership gets you access to group rides, skills clinics, and a welcoming community.</p>
+        </div>
+        <div class="cards grid-3">
+          <article class="card">
+            <h3>Starter</h3>
+            <p class="price">$0 / month</p>
+            <ul>
+              <li>1 intro ride</li>
+              <li>Newsletter & updates</li>
+            </ul>
+            <a class="btn btn-outline" href="#" aria-label="Select Starter plan">Get started</a>
+          </article>
+          <article class="card featured">
+            <h3>Rider</h3>
+            <p class="price">$8 / month</p>
+            <ul>
+              <li>Unlimited group rides</li>
+              <li>Members chat & forums</li>
+              <li>Discounts with partners</li>
+            </ul>
+            <a class="btn btn-primary" href="#" aria-label="Select Rider plan">Join now</a>
+          </article>
+          <article class="card">
+            <h3>Supporter</h3>
+            <p class="price">$15 / month</p>
+            <ul>
+              <li>Everything in Rider</li>
+              <li>Support youth programs</li>
+            </ul>
+            <a class="btn btn-outline" href="#" aria-label="Select Supporter plan">Become a supporter</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> OutCycling</p>
+      <p class="small muted">Made with ❤️ and human power.</p>
+    </div>
+  </footer>
+</body>
+</html>

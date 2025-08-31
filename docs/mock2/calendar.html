@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OutCycling — Ride Calendar</title>
+  <meta name="description" content="Search for upcoming rides, sign up, and download routes." />
+  <link rel="icon" href="../media/hero.jpg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="OutCycling home">
+        <span class="brand-mark" aria-hidden="true">🚲</span>
+        <span class="brand-text">OutCycling</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="organize.html">Organize</a></li>
+          <li><a href="pride-ride.html">Pride Ride</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Upcoming Rides</h2>
+          <p>Search and sign up for rides.</p>
+          <form class="ride-search" role="search">
+            <label class="sr-only" for="ride-search">Search rides</label>
+            <input id="ride-search" type="search" placeholder="Distance, location, pace..." />
+          </form>
+        </div>
+
+        <div class="table-wrap">
+          <table class="events">
+            <thead>
+              <tr><th>Date</th><th>Ride</th><th>Distance</th><th>Meetup</th><th>Type</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aug 24</td>
+                <td>Hudson River Greenway Social</td>
+                <td>18 mi / 29 km</td>
+                <td>Pier 25, 9:00 AM</td>
+                <td><span class="badge">OC</span></td>
+                <td>
+                  <a class="btn btn-small" href="#">Sign up</a>
+                  <a class="btn btn-small" href="#">Ask</a>
+                  <a class="btn btn-small" href="#">Route</a>
+                  <a class="btn btn-small" href="#">GPX</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Sep 7</td>
+                <td>Intro to Group Riding</td>
+                <td>12 mi / 19 km</td>
+                <td>Prospect Park, 10:00 AM</td>
+                <td><span class="badge badge-third">3P</span></td>
+                <td>
+                  <a class="btn btn-small" href="#">Sign up</a>
+                  <a class="btn btn-small" href="#">Ask</a>
+                  <a class="btn btn-small" href="#">Route</a>
+                  <a class="btn btn-small" href="#">GPX</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small">Routes via RideWithGPS. Slack invites are sent automatically when you sign up.</p>
+        <figure class="route-preview">
+          <img src="https://placehold.co/600x300?text=Route+Preview" alt="Route preview placeholder" />
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> OutCycling</p>
+      <p class="small muted">Made with ❤️ and human power.</p>
+    </div>
+  </footer>
+</body>
+</html>
