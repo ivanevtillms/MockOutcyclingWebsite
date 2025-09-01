@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Meta Mockup Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="menu">
+    <ul id="navList"></ul>
+    <div id="menuControls">
+      <input id="newMenuText" placeholder="New menu item" />
+      <button id="addMenuItem">Add</button>
+    </div>
+  </nav>
+  <div id="main">
+    <aside id="controls">
+      <section>
+        <h2>Tools</h2>
+        <div class="tool" draggable="true" data-type="header">Header</div>
+        <div class="tool" draggable="true" data-type="paragraph">Paragraph</div>
+        <div class="tool" draggable="true" data-type="image">Image</div>
+      </section>
+      <section>
+        <h2>Images</h2>
+        <div id="imagePicker">
+          <img src="../media/hero.jpg" alt="hero" />
+          <img src="../media/about.jpg" alt="about" />
+          <img src="../media/captain-delta.jpg" alt="delta" />
+        </div>
+      </section>
+      <section>
+        <h2>Palette</h2>
+        <label>Primary color <input type="color" id="primaryColor" value="#009688" /></label>
+      </section>
+      <section>
+        <button id="save">Save</button>
+        <button id="load">Load</button>
+        <button id="clear">Clear</button>
+      </section>
+    </aside>
+    <section id="canvas"></section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
